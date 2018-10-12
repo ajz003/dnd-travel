@@ -1,28 +1,107 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-    
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>D&D Travel Generator</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+
+                <form>
+
+                    <div class="form-group">
+                        <label for="days">How long the route takes in days:</label>
+                        <input type="number" class="form-control" id="days">
+                    </div>
+
+                    <div class="form-group">
+                            <label for="danger">Danger Level:</label>
+                            <select class="form-control" id="danger">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                                <label for="navigation">Navigation Difficulty:</label>
+                                <select class="form-control" id="navigation">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                </select>
+                            </div>
+
+
+                            <div class="form-group">
+                                    <label for="resources">Resources Difficulty:</label>
+                                    <select class="form-control" id="resources">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                    </select>
+                                </div>
+
+
+
+                    <div class="form-group">
+                        <label for="pace">Pace of travel:</label>
+                        <select class="form-control" id="pace">
+                            <option>Slow</option>
+                            <option>Medium</option>
+                            <option>Fast</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col">
+                    <p>"Danger is measured from 1 to 5. 1 is a relatively safe, civilized region or a barren, desolate region. 2 is a dangerous frontier. 3 is enemy territory. 4 is regularly patrolled, extremely hostile territory. And 5 is reserved for the sort of terrain which is filled with monsters that are actively trying to destroy all intruders and can detect the intruders with supernatural means. For example, Hell or The Land of the Dead. Seriously, 4 and 5 are pretty ridiculously dangerous."</p>
+        
+                    <p>
+                    "Navigation and Resources are both measured in terms of a DC. But either can be moot. For example, following a road or river makes Navigation moot. And traveling through civilized, friendly farmland makes Resources moot. Otherwise, you want to set a DC of 5, 10, 15, 20, 25, etc. in D&D 5E or a DC of 10, 15, 20, 25, 30, etc. in D&D 3E, 4E, and Pathfinder. Verdant forests and lush meadows have a Resource DC of 5 or 10. Deserts have a Resource DC of 25 or 30. Gently rolling flatlands have a Navigation DC of 5 or 10. A Desert has a Navigation DC of 25 or 30. If you want to add a Fantasy Factor like confounding fair curses or the blessings of the Land Spirits, you can adjust the DCs by 5 either way."
+                    </p>
+        
+                    </div>
+        </div>
+    </div>
 
 
 
 
 
-
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
