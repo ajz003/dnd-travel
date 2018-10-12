@@ -31,49 +31,36 @@
 
                 <form>
 
+                        <div class="form-group">
+                                <label for="route-name">Name of the route:</label>
+                                <input type="text" class="form-control" id="route-name">
+                            </div>
+
                     <div class="form-group">
                         <label for="days">How long the route takes in days:</label>
                         <input type="number" class="form-control" id="days">
                     </div>
 
                     <div class="form-group">
-                            <label for="danger">Danger Level:</label>
-                            <select class="form-control" id="danger">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                            </select>
-                        </div>
+                        <label for="danger">Danger Level (1-5):</label>
+                        <select class="form-control" id="danger">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
 
-                        <div class="form-group">
-                                <label for="navigation">Navigation Difficulty:</label>
-                                <select class="form-control" id="navigation">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                </select>
-                            </div>
+                    <div class="form-group">
+                        <label for="navigation">Navigation Difficulty (DC):</label>
+                        <input type="number" class="form-control" id="navigation">
+                    </div>
 
-
-                            <div class="form-group">
-                                    <label for="resources">Resources Difficulty:</label>
-                                    <select class="form-control" id="resources">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                    </select>
-                                </div>
-
-
+                    <div class="form-group">
+                        <label for="resources">Resources Difficulty (DC):</label>
+                        <input type="number" class="form-control" id="resources">
+                    </div>
 
                     <div class="form-group">
                         <label for="pace">Pace of travel:</label>
@@ -85,15 +72,36 @@
                     </div>
 
                 </form>
+
+                <button id="submit-travel">Submit</button>
+
             </div>
+            <div class="col-8">
+                <p>"Danger is measured from 1 to 5. 1 is a relatively safe, civilized region or a barren, desolate
+                    region. 2 is a dangerous frontier. 3 is enemy territory. 4 is regularly patrolled, extremely
+                    hostile territory. And 5 is reserved for the sort of terrain which is filled with monsters that are
+                    actively trying to destroy all intruders and can detect the intruders with supernatural means. For
+                    example, Hell or The Land of the Dead. Seriously, 4 and 5 are pretty ridiculously dangerous."</p>
+
+                <p>
+                    "Navigation and Resources are both measured in terms of a DC. But either can be moot. For example,
+                    following a road or river makes Navigation moot. And traveling through civilized, friendly farmland
+                    makes Resources moot. Otherwise, you want to set a DC of 5, 10, 15, 20, 25, etc. in D&D 5E or a DC
+                    of 10, 15, 20, 25, 30, etc. in D&D 3E, 4E, and Pathfinder. Verdant forests and lush meadows have a
+                    Resource DC of 5 or 10. Deserts have a Resource DC of 25 or 30. Gently rolling flatlands have a
+                    Navigation DC of 5 or 10. A Desert has a Navigation DC of 25 or 30. If you want to add a Fantasy
+                    Factor like confounding fair curses or the blessings of the Land Spirits, you can adjust the DCs by
+                    5 either way."
+                </p>
+
+            </div>
+        </div>
+
+        <div class="row text-center">
             <div class="col">
-                    <p>"Danger is measured from 1 to 5. 1 is a relatively safe, civilized region or a barren, desolate region. 2 is a dangerous frontier. 3 is enemy territory. 4 is regularly patrolled, extremely hostile territory. And 5 is reserved for the sort of terrain which is filled with monsters that are actively trying to destroy all intruders and can detect the intruders with supernatural means. For example, Hell or The Land of the Dead. Seriously, 4 and 5 are pretty ridiculously dangerous."</p>
-        
-                    <p>
-                    "Navigation and Resources are both measured in terms of a DC. But either can be moot. For example, following a road or river makes Navigation moot. And traveling through civilized, friendly farmland makes Resources moot. Otherwise, you want to set a DC of 5, 10, 15, 20, 25, etc. in D&D 5E or a DC of 10, 15, 20, 25, 30, etc. in D&D 3E, 4E, and Pathfinder. Verdant forests and lush meadows have a Resource DC of 5 or 10. Deserts have a Resource DC of 25 or 30. Gently rolling flatlands have a Navigation DC of 5 or 10. A Desert has a Navigation DC of 25 or 30. If you want to add a Fantasy Factor like confounding fair curses or the blessings of the Land Spirits, you can adjust the DCs by 5 either way."
-                    </p>
-        
-                    </div>
+                <h2>Encounters of the Day:</h2>
+                <div id="encounters"></div>
+            </div>
         </div>
     </div>
 
